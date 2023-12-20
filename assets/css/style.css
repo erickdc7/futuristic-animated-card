@@ -13,3 +13,10 @@ body {
   min-height: 100vh;
   background: #0e1538;
 }
+
+.container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
