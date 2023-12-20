@@ -43,6 +43,18 @@ body {
   animation: animate 8s linear infinite;
 }
 
+.box::after {
+  background: linear-gradient(315deg, #ffeb3b, #e91e63);
+  filter: hue-rotate(calc(var(--i) * 120deg));
+  animation-delay: -2s;
+}
+
+.box:hover:before,
+.box:hover:after {
+  animation-play-state: paused;
+  inset: -80px 80px;
+}
+
 @keyframes animate {
   0% {
     transform: rotate(0deg);
@@ -50,6 +62,13 @@ body {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.box i {
+  position: absolute;
+  inset: 3px;
+  background: #0e1538;
+  z-index: 1;
 }
 
 .box .content {
