@@ -18,6 +18,7 @@ body {
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 50px;
 }
 
@@ -134,4 +135,23 @@ body {
 
 .box .content a:hover {
   letter-spacing: 0.2em;
+}
+
+@media screen and (max-width: 430px) {
+  .box {
+    width: 250px;
+    height: 350px;
+  }
+
+  .box .content h2 {
+    font-size: 0.85em;
+  }
+
+  .box .content h2 span {
+    font-size: 0.75em;
+  }
+
+  .box .content a {
+    font-size: 0.65em;
+  }
 }
